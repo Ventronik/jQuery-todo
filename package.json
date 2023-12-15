@@ -2,7 +2,8 @@
   "name": "jquery-todo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/index.cjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && node dist/index.js"
@@ -18,9 +19,11 @@
   },
   "homepage": "https://github.com/Ventronik/jQuery-todo#readme",
   "dependencies": {
+    "jquery": "^3.7.1",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.29",
     "ts-node": "^10.9.2"
   }
 }
